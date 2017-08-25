@@ -9,6 +9,7 @@ float alti = 0;
 unsigned long timer = 0;
 
 void setup () {
+  Wire.begin(); 
   Serial.begin(57600);
   bmp.initialize();
   bmp.setSeaLevelPressure(100600);
